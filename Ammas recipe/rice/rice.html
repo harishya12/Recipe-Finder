@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rice</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="container icecream-page">
+
+        <h1>Variety Rice</h1>
+        <input type="text" id="ingredientInput" placeholder="Search..." />
+        <button onclick="findRecipes()">Search</button>
+        <div id="recipes"></div>
+        <div id="rice-list" class="flavor-grid"></div>
+        <div id="home-button" class="button-row">
+            <button onclick="goBackHome()" class="back-button">Home</button>
+        </div>
+
+
+        <div id="recipe-details"></div>
+
+        <div id="nav-buttons" class="button-row" style="display: none;">
+            <button onclick="goBackHome()" class="back-button">Home</button>
+            <button onclick="goBackToFlavours()" class="back-button">Back</button>
+        </div>
+
+    </div>
+
+    <script src="rice.js"></script>
+</body>
+<script>
+    function goBackHome() {
+        window.location.href = "../index.html";
+    }
+</script>
+
+
+</html>

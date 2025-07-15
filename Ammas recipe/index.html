@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>findRecipes</title>
+    <link rel="icon" type="https://png.pngtree.com/template/20191015/ourmid/pngtree-chef-abstract-kitchener-cooky-icon-logo-image_317353.jpg" href="https://png.pngtree.com/template/20191015/ourmid/pngtree-chef-abstract-kitchener-cooky-icon-logo-image_317353.jpg"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Amma’s Recipe </h1>
+        <input type="text" id="ingredientInput" placeholder="Search recipes..." />
+        <button onclick="findRecipes()">Search</button>
+        <div id="recipes"></div>
+        <div class="category-grid">
+            <a href="icecream/icecream.html" class="category-card">
+                <img src="https://img2.10bestmedia.com/Images/Photos/380655/GettyImages-513889930_54_990x660.jpg?auto=webp&width=3840&quality=75" />
+                <h2>Ice Cream</h2>
+            </a>
+
+            <a href="pasta/pasta.html" class="category-card">
+                <img src="https://www.thechunkychef.com/wp-content/uploads/2017/08/One-Pot-Chicken-Parmesan-Pasta-feat.jpg" alt="Pasta" />
+                <h2>Pasta</h2>
+            </a>
+
+            <a href="biriyani/biriyani.html" class="category-card">
+                <img src="https://healux.in/wp-content/uploads/2020/11/ChickenBiryani.jpg" alt="Biriyani" />
+                <h2>Biriyani</h2>
+            </a>
+            <a href="rice/rice.html" class="category-card">
+                <img src="https://media.istockphoto.com/id/1040506198/photo/variety-of-rice-types-in-different-bowls.jpg?s=612x612&w=0&k=20&c=qVy0lrHlYziEHYlTiJ2l3KyOgj7ONJQLOH7YoRDRW8k=" alt="Rice" />
+                <h2>Rice</h2>
+            </a>
+        </div>
+    </div>
+    <div id="recipe-details"></div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

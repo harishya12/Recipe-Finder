@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="container icecream-page">
+        <h1>Ice Cream</h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="ingredientInput" placeholder="Search..." />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Search Results -->
+        <div id="recipes" class="flavor-grid"></div>
+
+        <!-- Ice Cream List -->
+        <div id="ice-cream-list" class="flavor-grid"></div>
+
+        <!-- Recipe Details -->
+        <div id="recipe-details"></div>
+
+        <!-- Navigation Buttons -->
+        <div id="nav-buttons" class="button-row" style="display: none;">
+            <button onclick="goBackHome()" class="back-button">Home</button>
+            <button onclick="goBackToFlavours()" class="back-button">Back</button>
+        </div>
+
+        <!-- Home Button (outside details view) -->
+        <div id="home-button" class="button-row">
+            <button onclick="goBackHome()" class="back-button">Home</button>
+        </div>
+    </div>
+
+    <script src="icecream.js"></script>
+    <script>
+        function goBackHome() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+
+</html>
